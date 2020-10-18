@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UtF-8">
+   <title> Contact Form </title>
+</head>
+<body>
+   <h1>Thank you </h1>
+   <P>Here is the information you have submitted:</p>
+
+<?php
+
+$nom     = (isset($_POST['nom']))     ? Rec($_POST['nom'])     : '';
+$email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
+$objet   = (isset($_POST['objet']))   ? Rec($_POST['objet'])   : '';
+$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
+$email = (IsEmail($email)) ? $email : '';
+
+ 
+if (($err_formulaire) || (!isset($_POST['envoi'])))
+{
+	
+	echo '
+	<form id="contact" method="post" action="'.$form_action.'">
+	<fieldset><legend>Vos coordonnées</legend>
+		<p><label for="nom">Nom :</label><input type="text" id="nom" name="nom" value="" /></p>
+		<p><label for="email">Email :</label><input type="text" id="email" name="email" value="" /></p>
+	</fieldset>
+ 
+	<fieldset><legend>Votre message :</legend>
+		<p><label for="objet">Objet :</label><input type="text" id="objet" name="objet" value="" /></p>
+		<p><label for="message">Message :</label><textarea id="message" name="message" cols="30" rows="8"></textarea></p>
+	</fieldset>
+ 
+	<div style="text-align:center;"><input type="submit" name="envoi" value="Envoyer le formulaire !" /></div>
+	</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

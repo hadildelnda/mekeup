@@ -1,0 +1,119 @@
+<html>
+ <head>
+  <title> MAKEUP MAC </title>
+  <link rel="stylesheet" href="style.css">
+ </head> 
+
+  <body> 
+ <div class="main">
+   <nav>  
+    <div class="logo">
+     <img src="images/High_resolution_wallpaper_background_ID_77701643460.jpg">
+    </div>
+ <div class="nav-links">
+    <ul>
+      <li><a href="home.html"> Home</a></li>
+      <li><a href="makeup.html"> Makeup</a></li>
+      <li><a href="fashion.html"> Fashion</a></li>
+      <li><a href="Contact.html"> Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+
+ <div class="information">
+  <div class="overlay"></div>
+   <img src="images/girl-face-style-background-black-hd-wallpaper-preview (1).jpg" class="makeup">       
+         
+         <div id="circle">
+           <div class="feature one">
+                  <img src="images/beauty.png">
+             <div>
+                     <h1>Lipstick</h1>
+                     <p>matte, lip gloss,liquid lipstik</p>
+             </div>
+           </div>   
+          <div class="feature two">
+                  <img src="images/makeup (1).png">
+             <div>
+                     <h1>Mascara</h1>
+                     <p>mascara lash, aqua smoky, mascara waterproof</p>
+             </div>
+          </div>   
+           <div class="feature three">
+                  <img src="images/nails.png">
+             <div>
+                     <h1>Nail polish</h1>
+                     <p>opi nail, essie nail, matte nail</p>
+             </div>
+           </div>   
+            <div class="feature four">
+                  <img src="images/make-up-kit.png">
+              <div>
+                     <h1>Brush</h1>
+                     <p>powder brush, bs mall, blending brush</p>
+             </div>
+           </div> 
+ </div>
+ </div>
+    <div class="controls">
+   <img src="images/up-chevron.png" id="upBtn">
+   <h3>Species</h3>
+   <img src="images/up-chevron.png" id="downBtn">
+</div>
+</div>
+
+<div class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+    <h1	class="logo-text"><span>Makeup<span>Mac</h1>
+   <p>    Alibaba Group | Taobao Marketplace | Tmall.com | Juhuasuan | AliExpress | Alibaba.com | 1688.com | Alimama | Fliggy | Taobao Global
+Alibaba Cloud | AliOS | AliTelecom | Autonavi | UCWeb | Umeng | Xiami | DingTalk | Alipay | Lazada | Alibaba Security
+
+Browse Alphabetically: Onetouch | Showroom | Country Search | Suppliers | Wholesaler | Affiliate
+
+Product Listing Policy - Intellectual Property Protection - Privacy Policy - Terms of Use - User Information Legal Enquiry Guide    </p>
+<div class="contact">
+  <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+  <span><i class="fas fa-envelope"></i> &nbsp; info@ahbonis.com</span>
+</div>
+ </div>
+   
+  
+  </div>
+  
+  <div class="footer-bottom">
+  &copy; codingposts.com | Designed by Hadil
+
+  </div>
+
+ 
+
+
+
+
+
+<script>
+  var circle = document.getElementById("circle");
+  var upBtn = document.getElementById("upBtn");
+  var downBtn = document.getElementById("downBtn");
+
+ var rotateValue = circle.style.transform;
+ var rotateSum;
+
+ upBtn.onclick = function()
+{
+rotateSum = rotateValue + "rotate(-90deg)";
+circle.style.transform = rotateSum;
+rotateValue = rotateSum;
+
+}
+downBtn.onclick = function()
+{
+rotateSum = rotateValue + "rotate(90deg)";
+circle.style.transform = rotateSum;
+rotateValue = rotateSum;
+
+}
+</script>
+</body> 
+</html>
